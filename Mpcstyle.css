@@ -1,0 +1,28 @@
+nav ul {list-style: none; }
+nav a{text-decoration: none;}
+nav li {display: inline;}
+a:hover {background-color: orange}
+.cover{
+    width: 500px;height: 500px;
+    margin-top: 10px;
+    display: flex;
+    }
+.box{
+        margin: 10px;
+        width: 250px;
+        height: 250px;
+        object-fit:fill;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+
+    }    
+.text {
+        position: relative;
+        bottom: 8px;
+        left: 16px;
+        color: black;
+        padding: 5px;
+
+        

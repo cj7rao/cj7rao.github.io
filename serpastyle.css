@@ -1,0 +1,30 @@
+body { background-color:white; font-family: sans-serif;
+    margin: auto; padding: auto; color:blueviolet;
+     }
+header { background-image: url(logo.png) ;image-orientation: 0grad; background-repeat: no-repeat; 
+     text-align: center; color: red; background-color: black;
+     padding-left: 140px; padding-top: 10px; border-radius: 15px;;
+     }
+nav { background-color:white; padding-left: 20px; padding-top: 10px; 
+ border-radius: 15px;text-align: center;
+ font-size: 2em;
+  }
+  nav ul {list-style: none; }
+  nav a{text-decoration: none;}
+  nav li {display: inline;}
+  a:hover {background-color: orange}
+img {float: left;}
+
+
+.box{ width: 100%;
+     background-color: white;
+     opacity: 0.8;
+  
+
+}
+
+p{     margin-top: 0px;
+   margin-bottom: 0px;  
+   line-height: 1.4;
+   clear: both 
+}
