@@ -9,58 +9,84 @@
     body { background-color:white; font-family: sans-serif;
            margin: auto; padding: auto;
             }
-    header { background-image: url(logo.png) ;image-orientation: 0grad; background-repeat: no-repeat; 
-            text-align: center; color: red; background-color: black;
-            padding-left: 140px; padding-top: 10px; border-radius: 15px;;
+    header {padding-top: 5px; padding-bottom: 5px;
+            text-align: center; color:white; background-color: black     ;
             }
-    nav { background-color:white; padding-left: 20px; padding-top: 10px; 
-        border-radius: 15px;text-align: center;
-        font-size: 2em;
-         }
-    img { object-fit:contain;
+    nav {background-color: aliceblue; text-align:center;
+     font-size: 1.2em;
+        }
+    
+   
+    
+    .img { object-fit:contain;}
+    .round{border-radius: 50%;
+            height: 60px; width:60px;}
 
-          }
           
-     
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+}
+@keyframes imageAnimation {
+                            0% {transform: scale(0);}
+                            100% {transform: scale(1);}
+                            
+                            }
+.case2{animation: imageAnimation 1s ease-in-out;}
+.case1{animation: imageAnimation 0.5s ease-in-out;}
+
+.sticky + .content {padding-top: 100px;}    
 </style>
 </head>
 <body>
     <header>
-        <h1>CJ7(AUTOMOTIVE DETAILING)</h1>
+        <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif;color: white;">CJ7 DETAILING</h1>
     </header>   
-    <nav>
+    <nav id="nav">
         <ul>
-        <li><a href ="index.html">
-        <img src="logo1.png"></a>&nbsp;</li>
-        <li><a href ="index.html",class="outset">Home</a>&nbsp;</li>
-        <li><a href ="services.html">services</a>&nbsp;</li>
-        <li><a href ="bookaservice.html">Book-a-Service</a>&nbsp;</li>
-        <li><a href ="ourprojetcs.html">Our-Projects</a></li>
+        <li><a class="case" href="index.html"><img class="round" src="logo1.png"></a>&nbsp;</li>
+        <li><a class="active" href ="index.html",class="outset">Home</a>&nbsp;</li>
+
+        <div class="dropdown">
+            <button class="dropbtn"><a href="services.html">Services</a> 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="ceramicoating.html">Ceramic Coating</a>
+              <a href="ppf.html">Ppf</a>
+              <a href="bodyshop.html">Body Shop</a>
+              <a href="detailing.html">Detailing</a>
+            </div>
+          </div> 
+
+        <li><a href ="bookaservice.html">Book-a-Service</a></li>
         </ul>    
     </nav>
 
 
     <main>
-        <img src="mainimage.jpg" width="100%" height="auto">
+        <img class="case1" src="mainimage.jpg" width="100%" height="auto">
 
         <div class="cover">
         
             <div class="box">
-                <a href="ceramicoating.html"><img src="ceramiccoating.jpg" alt="ceramiccoating" width="250px" height="250px" ></a>
+                <a href="ceramicoating.html"><img class="case2" src="ceramiccoating.jpg" alt="ceramiccoating" width="300px" height="250px" ></a>
                 <div class="text">
                     <h2>Ceramic Coating</h2>
                 </div>
             </div>    
 
             <div class="box">
-                <a href="ppf.html"><img src="ppf.png" alt="Paint Protection Film"width="250px" height="250px" ></a>
+                <a href="ppf.html"><img class="case2" src="ppf.png" alt="Paint Protection Film"width="300px" height="250px" ></a>
                 <div class="text">
                     <h2>Paint Protection Film</h2>
                 </div>
             </div>
 
             <div class="box">
-                <a href="bodyshop.html"><img src="dentingpainting.jpg" alt="Body Shop" width="250px" height="250px"></a>
+                <a href="bodyshop.html"><img class="case2" src="dentingpainting.jpg" alt="Body Shop" width="300px" height="250px"></a>
                 <div class="text">
                     <h2>Body Shop</h2>
                 </div>
@@ -68,7 +94,7 @@
             </div>
 
             <div class="box">
-                <a href="detailing.html"><img src="detailing.jpg" alt="Detailing"width="250px" height="250px"></a>
+                <a href="detailing.html"><img class="case2" src="detailing.jpg" alt="Detailing" width="300px" height="250px"></a>
                 <div class="text">
                     <h2>Detailing</h2>
                 </div>
@@ -78,7 +104,50 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 chakradhar.</p>
+        <div class="box1">
+        <div>
+        <h3>Contact Us</h3>
+            <ul>
+                <li>email@gmail.com</li>
+                <li><a href="#" style="text-decoration: none;color: white;">Instagram</a></li>
+                
+            </ul>    
+        
+        </div>
+        <div>
+            <h3>Services</h3>
+                <ul>
+                    <li><a href="ceramicoating.html"  style="text-decoration: none;color: white;">Ceramic Coating</a></li>
+                    <li><a href="ppf.html"  style="text-decoration: none;color: white;">Ppf</a></li>
+                    <li><a href="bodyshop.html"  style="text-decoration: none;color: white;">Body Shop</a></li>
+                    <li><a href="detailing.html"  style="text-decoration: none;color: white;">Detailing</a></li>
+                </ul>
+        </div>
+        <div>
+            <h3>Terms</h3>
+                <ul>
+                    <li><a href="#"  style="text-decoration: none;color: white;">Description</a></li>
+                    <li><a href="#"  style="text-decoration: none;color: white;">Terms and Conditions</a></li>
+                    <li><a href="#"  style="text-decoration: none;color: white;">Privacy Policy</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <p style="padding-bottom: 0;">&copy; 2023 chakradhar.</p>
     </footer>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("nav");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
 </body>
 </html>

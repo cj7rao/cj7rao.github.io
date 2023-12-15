@@ -7,65 +7,142 @@
     <link rel="stylesheet" href="serpastyle.css">
     
 <style>
-     main { padding-left: 20px; padding-top: 10px; 
-        border-radius: 15px;text-align:justify;
-        font-size: 2em;  
-        background-image:url(mainimage.jpg);
+     main { padding-left: 50px; padding-top: 10px; padding-right: 50px;
+        border-radius: 15px;text-align:justify; background-color: aliceblue;
+      
+        /*background-image:url(mainimag.jpg);
+      
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: auto;
-        }   
+        background-size: auto;*/
+        }
+
+      
+      nav a.active{color:rgb(104, 108, 124) ; font-weight: bolder;}
+      
+    hr {
+      
+      margin-top: 0;
+    }
+
+   
+  
+
+    b {
+      display: block;
+      margin-top: 10px;
+      color: black;
+    }
         
       
 </style>
 </head>
 <body>
+  
     <header>
-        <h1>CJ7(AUTOMOTIVE DETAILING)</h1>
+        <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif;color: white;">CJ7 DETAILING</h1>
     </header>   
-    <nav>
+    <nav id="nav">
         <ul>
-        <li><a href ="Home1.html">
-        <img src="logo1.png"></a>&nbsp;</li>
-        <li><a href ="index.html",class="outset">Home</a>&nbsp;</li>
-        <li><a href ="services.html">services</a>&nbsp;</li>
+        <li><a class="case" href="index.html"><img class="round" src="logo1.png"></a>&nbsp;</li>
+        <li><a href ="index.html"class="outset">Home</a>&nbsp;</li>
+
+
+        <div class="dropdown">
+          <button class="dropbtn"><a class = "active" href="services.html">Services</a> 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="ceramicoating.html">Ceramic Coating</a>
+            <a href="ppf.html">Ppf</a>
+            <a href="bodyshop.html">Body Shop</a>
+            <a href="detailing.html">Detailing</a>
+          </div>
+        </div> 
+              
         <li><a href ="bookaservice.html">Book-a-Service</a>&nbsp;</li>
-        <li><a href ="ourprojetcs.html">Our-Projects</a></li>
-        </ul>    
+        </ul> 
     </nav>
 
 
     <main>
-       <h2>Our Services</h2>
+      
+       <h1>Our Services</h1>
+    
        <div class="box">
         <p>
-       <a href="ceramicoating.html"><img src="ceramiccoating.jpg" width= "400px" height="300px">
-       <h3>Ceramic Coating</h3><br></a>
-       Ceramic coating adds a protective layer to paint. It protects paint from scratches, UV light fading, and oxidation. It also repels water. </p>
+       <a href="ceramicoating.html"><img class="case2" src="ceramiccoating.jpg" width= "300px" height="200px">
+       <h2>Ceramic Coating</h2></a><b>
+       Ceramic coating adds a protective layer to paint. It protects paint from scratches, UV light fading, and oxidation. It also repels water.</b> </p>
        </div>
        <div class="box">
         <p>
-       <a href="ppf.html"><img src="ppf.png" width= "400px" height="300px">
-       <h3>Paint Protection Film</h3><br></a>
-       Paint Protection Film protects paint from rock chipping, scratches, and fading.</p>
+       <a href="ppf.html"><img class="case2" src="ppf.png" width= "300px" height="200px">
+       <h2>Paint Protection Film</h2></a><b>
+       Paint Protection Film protects paint from rock chipping, scratches, and fading.</b></p>
        </div>
        <div class="box">
        <p> 
-       <a href="bodyshop.html"><img src="dentingpainting.jpg"width= "400px" height="300px">
-       <h3>Body Shop</h3><br></a>
-       Denting, fixing, and painting</p>
+       <a href="bodyshop.html"><img class="case2" src="dentingpainting.jpg"width= "300px" height="200px">
+       <h2>Body Shop</h2></a><b>
+       Denting, fixing, and painting.</b></p>
        </div>
        <div class="box">
        <p>
-        <a href="detailing.html"><img src="detailing.jpg" width= "400px" height="300px">
-       <h3>Detailing</h3><br></a>
-       Full interior and exterior cleaning. removal of stains and hard water marks.</p>
+        <a href="detailing.html"><img class="case2" src="detailing.jpg" width= "300px" height="200px">
+       <h2>Detailing</h2></a><b>
+       Full interior and exterior cleaning. removal of stains and hard water marks.</b></p>
        </div>
+       
 
     </main>
 
     <footer>
-        <p>&copy; 2023 chakradhar.</p>
-    </footer>
+      <div class="box1">
+      <div>
+      <h3>Contact Us</h3>
+          <ul>
+              <li>email@gmail.com</li>
+              <li><a href="#" style="text-decoration: none;color: white;">Instagram</a></li>
+              
+          </ul>    
+      
+      </div>
+      <div>
+          <h3>Services</h3>
+              <ul>
+                  <li><a href="ceramicoating.html"  style="text-decoration: none;color: white;">Ceramic Coating</a></li>
+                  <li><a href="ppf.html"  style="text-decoration: none;color: white;">Ppf</a></li>
+                  <li><a href="bodyshop.html"  style="text-decoration: none;color: white;">Body Shop</a></li>
+                  <li><a href="detailing.html"  style="text-decoration: none;color: white;">Detailing</a></li>
+              </ul>
+      </div>
+      <div>
+          <h3>Terms</h3>
+              <ul>
+                  <li><a href="#"  style="text-decoration: none;color: white;">Description</a></li>
+                  <li><a href="#"  style="text-decoration: none;color: white;">Terms and Conditions</a></li>
+                  <li><a href="#"  style="text-decoration: none;color: white;">Privacy Policy</a></li>
+                  
+              </ul>
+          </div>
+      </div>
+      <p style="padding-bottom: 0;">&copy; 2023 chakradhar.</p>
+  </footer>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("nav");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } 
+          else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
 </body>
 </html>

@@ -15,32 +15,100 @@
 </head>
 <body>
     <header>
-        <h1>CJ7(AUTOMOTIVE DETAILING)</h1>
+        <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif;color: white;">CJ7 DETAILING</h1>
     </header>   
-    <nav>
+    <nav id="nav">
         <ul>
-        <li><a href ="index.html">
-        <img src="logo1.png"></a>&nbsp;</li>
+        <li><a class="case" href="index.html"><img class="round" src="logo1.png"></a>&nbsp;</li>
         <li><a href ="index.html",class="outset">Home</a>&nbsp;</li>
-        <li><a href ="services.html">services</a>&nbsp;</li>
+
+        <div class="dropdown">
+          <button class="dropbtn"><a href="services.html">Services</a> 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="ceramicoating.html">Ceramic Coating</a>
+            <a href="ppf.html">Ppf</a>
+            <a href="bodyshop.html">Body Shop</a>
+            <a href="detailing.html">Detailing</a>
+          </div>
+        </div> 
+
         <li><a href ="bookaservice.html">Book-a-Service</a>&nbsp;</li>
-        <li><a href ="ourprojetcs.html">Our-Projects</a></li>
         </ul>    
     </nav>
 
 
     <main>
+      <button onclick="goBack()" class="custom-button">Back</button>
+
+      <div class="box">
        <h1>Detailing</h1>
-       <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxTEXTxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-       <img src="detailing.jpg" width="200px" height="200px">
-       <img src="detailing.jpg" width="200px" height="200px">
-       
+        <br>
+       <ul style="font-family: Arial, Helvetica, sans-serif;">
+         <li style="font-weight: bolder; font-style: italic;">Services</li>
+         <li>Full Car Detailing</li>
+         <li>Exterior Deatailing</li>
+         <li>Interior Detailing</li>
+         <li>Hard Water Scaling Removal</li>
+         <li>Under Body Rust Coating</li>
+
+          <li><img class="case2" src="detailing.jpg" width="400px" height="300px"></li>
+
+          </ul>
+      </div> 
        
 
     </main>
 
     <footer>
-        <p>&copy; 2023 chakradhar.</p>
-    </footer>
+      <div class="box1">
+      <div>
+      <h3>Contact Us</h3>
+          <ul>
+              <li>email@gmail.com</li>
+              <li><a href="#" style="text-decoration: none;color: white;">Instagram</a></li>
+              
+          </ul>    
+      
+      </div>
+      <div>
+          <h3>Services</h3>
+              <ul>
+                  <li><a href="ceramicoating.html"  style="text-decoration: none;color: white;">Ceramic Coating</a></li>
+                  <li><a href="ppf.html"  style="text-decoration: none;color: white;">Ppf</a></li>
+                  <li><a href="bodyshop.html"  style="text-decoration: none;color: white;">Body Shop</a></li>
+                  <li><a href="detailing.html"  style="text-decoration: none;color: white;">Detailing</a></li>
+              </ul>
+      </div>
+      <div>
+          <h3>Terms</h3>
+              <ul>
+                  <li><a href="#"  style="text-decoration: none;color: white;">Description</a></li>
+                  <li><a href="#"  style="text-decoration: none;color: white;">Terms and Conditions</a></li>
+                  <li><a href="#"  style="text-decoration: none;color: white;">Privacy Policy</a></li>
+                  
+              </ul>
+          </div>
+      </div>
+      <p style="padding-bottom: 0;">&copy; 2023 chakradhar.</p>
+  </footer>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("nav");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        function goBack() {
+      window.history.back();
+        }
+        </script>
 </body>
 </html>

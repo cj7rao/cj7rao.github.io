@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>services/CJ7</title>
+    <link rel="stylesheet" href="serpastyle.css">
+    
+<style>
+     main { padding-left: 50px; padding-top: 10px; padding-right: 50px;
+        border-radius: 15px;margin: 20px; padding: 20px;
+        background-color: #f2f2f2;
+        
+        /*
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: auto;
+         ;*/
+        }   
+      
+    .round{border-radius: 50%;
+            height: 60px; width:60px; }
+    
+            nav a.active{color:rgb(104, 108, 124) ; font-weight: bolder;} 
+    
+
+
+  form {
+    margin-top: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  select {
+    height: 30px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+
+</style>
+</head>
+<body>
+  
+    <header id="header">
+        <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif; color: white;">CJ7 DETAILING</h1>
+    </header>   
+    <nav id="nav">
+        <ul>
+        <li><a class="case" href="index.html"><img class="round" src="logo1.png"></a></li>
+        <li><a href ="index.html",class="outset">Home</a></li>
+
+        <div class="dropdown">
+            <button class="dropbtn"><a href="services.html">Services</a> 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="ceramicoating.html">Ceramic Coating</a>
+              <a href="ppf.html">Ppf</a>
+              <a href="bodyshop.html">Body Shop</a>
+              <a href="detailing.html">Detailing</a>
+            </div>
+          </div> 
+    
+        <li><a class="active" href ="bookaservice.html">Book-a-Service</a></li>
+        </ul> 
+        </nav>   
+    <main> 
+         
+        <h1>Book a Service</h1>
+            <form> 
+                <label for="myName">Name:</label> 
+                <input type="text" name="myName" id="myName">
+                <label for="myContact">Contact:</label> 
+                <input type="number" name="myContact" id="myContact">
+                <label for="Email">Email:</label> 
+                <input type="text" name="Email" id="Email">
+                <label for="Vehicle">Vehicle:</label> 
+                <input type="text" name="Vehicle" id="Vehicle">
+                <label for="Service">Service:</label> 
+                <select name="Service" id="Service">
+                    <optgroup label="Select a Service">
+                          <option value="Ceramic Coating">Ceramic Coating</option>
+                          <option value="Paint Protection Film">Paint Protection Film</option>
+                          <option value="Body Shop">Body Shop</option>
+                          <option value="Detailing">Detailing</option>
+                    </optgroup>
+                </select>
+                <label for="myComments">Comments:</label> 
+                <textarea name="myComments" id="myComments" rows="5" cols="20"></textarea> 
+                <input type="submit" value="Submit"> 
+            </form>
+        
+    </main>
+
+    <footer>
+      <div class="box1">
+      <div>
+      <h3>Contact Us</h3>
+          <ul>
+              <li>email@gmail.com</li>
+              <li><a href="#" style="text-decoration: none;color: white;">Instagram</a></li>
+              
+          </ul>    
+      
+      </div>
+      <div>
+          <h3>Services</h3>
+              <ul>
+                  <li><a href="ceramicoating.html"  style="text-decoration: none;color: white;">Ceramic Coating</a></li>
+                  <li><a href="ppf.html"  style="text-decoration: none;color: white;">Ppf</a></li>
+                  <li><a href="bodyshop.html"  style="text-decoration: none;color: white;">Body Shop</a></li>
+                  <li><a href="detailing.html"  style="text-decoration: none;color: white;">Detailing</a></li>
+              </ul>
+      </div>
+      <div>
+          <h3>Terms</h3>
+              <ul>
+                  <li><a href="#"  style="text-decoration: none;color: white;">Description</a></li>
+                  <li><a href="#"  style="text-decoration: none;color: white;">Terms and Conditions</a></li>
+                  <li><a href="#"  style="text-decoration: none;color: white;">Privacy Policy</a></li>
+                  
+              </ul>
+          </div>
+      </div>
+      <p style="padding-bottom: 0;">&copy; 2023 chakradhar.</p>
+  </footer>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("nav");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+</body>
+</html>
